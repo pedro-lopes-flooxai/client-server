@@ -1,3 +1,5 @@
+const { application } = require("express");
+
 class HttpRequest {
 
     static get(url, params = {}) {
@@ -57,7 +59,9 @@ class HttpRequest {
     
             };
     
-            ajax.send();
+            ajax.setRequestHeader('Content-Type', 'application/json');
+
+            ajax.send(JSON.stringify(params));
 
         });
 
