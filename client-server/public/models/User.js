@@ -113,7 +113,7 @@ class User {
 
        }
 
-            promise.them(data => {
+            promise.then(data => {
 
                 this.loadFromJSON(data);
 
