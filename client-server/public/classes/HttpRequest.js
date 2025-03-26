@@ -1,4 +1,3 @@
-const { application } = require("express");
 
 class HttpRequest {
 
